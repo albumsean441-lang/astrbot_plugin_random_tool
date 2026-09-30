@@ -1,0 +1,14 @@
+# 开发期文件
+_dev/
+__pycache__/
+*.py[cod]
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 本地凭据与临时产物
+*.token
+_deploy.tar
