@@ -1,0 +1,12 @@
+name: astrbot_plugin_random_tool # 插件唯一识别名，与目录名一致
+display_name: 随机数生成工具集 # 展示名
+short_desc: 为 AI 提供整数/浮点/骰子/随机挑选/打乱/随机字符串六类随机数工具
+desc: >-
+  以 LLM 工具（Function Calling）形式向主 AI 提供随机数生成能力。包含 6 个工具：
+  random_int（区间随机整数）、random_float（随机浮点）、dice（掷骰，支持 2d6+3 记法）、
+  random_choice（从列表随机挑选，支持权重与不重复）、shuffle（随机打乱）、
+  random_string（随机密码/token）。随机源可选 MT19937（标准库，快）或 secrets CSPRNG
+  （密码学安全），所有区间取值均使用无偏算法。
+version: v1.0.0 # 插件版本号
+author: albumsean441-lang # 作者
+repo: https://github.com/albumsean441-lang/astrbot_plugin_random_tool # 仓库地址
