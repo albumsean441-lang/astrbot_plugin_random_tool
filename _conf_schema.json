@@ -1,0 +1,9 @@
+{
+  "random_backend": {
+    "description": "随机数后端",
+    "type": "string",
+    "options": ["standard", "secure"],
+    "hint": "standard = Python 标准库 random（MT19937，C 实现，本机实测约 1640 万次/秒取值，零依赖，适合日常随机数）；secure = secrets 模块（操作系统 CSPRNG，实测约 360 万次/秒，密码学安全不可预测，适合抽奖、发密码、防作弊场景）。两者取值均无偏。",
+    "default": "standard"
+  }
+}
